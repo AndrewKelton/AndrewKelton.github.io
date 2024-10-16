@@ -216,6 +216,7 @@ h2 {
 
 /* Container for the dropdown content */
 .dropdown {
+  position: relative;
   display: inline-block;
 }
 
@@ -223,9 +224,18 @@ h2 {
 .dropdown-content {
   background-color:#666464;
   display: none;
-  min-width: 160px;
+  position:relative;
+  max-width: 70%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  opacity: 0;  /* Make it transparent initially */
+  transition: opacity 5s ease-in;  /* Smooth transition for opacity and height */
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;  /* Show the dropdown */
+  opacity: 1;  /* Fade in */
 }
 
 /* Links inside the dropdown */
@@ -234,6 +244,28 @@ h2 {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+
+.dropdown-content p {
+  margin-right: 25px;
+  margin-top:0px;
+  margin-bottom: 0px;
+  margin-left:25px;
+}
+
+.dropdown-content p b {
+  color:white;
+}
+
+.dropdown-content ul {
+  padding-left: 15px; /* Adjust this value to control indent */
+  margin-left: 0px;/* Remove default margin */
+  /* list-style-position: inside; Keeps the bullet inside the content area */
+}
+
+.dropdown-content li {
+  padding-left: 0;    /* Ensure no extra padding on the list items */
+  color: #D3D3D3;
 }
 
 /* Show the dropdown content when hovering over the dropdown container */
@@ -257,4 +289,13 @@ nav a:hover {
   color: rgb(84, 71, 53);
   background-color: white;
   border-radius: 2px;
+}
+
+.description {
+  gap: 10px;
+  /* margin-bottom:0px; */
+}
+
+.description ul {
+  margin-top:0px;
 }
