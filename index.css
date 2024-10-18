@@ -1,3 +1,18 @@
+
+@media (max-width: 768px) {
+  .dropdown-content {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .charts-container {
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -224,18 +239,38 @@ h2 {
 .dropdown-content {
   background-color:#666464;
   display: none;
-  position:relative;
-  max-width: 70%;
+  position: fixed;
+  min-width: 70vw; /* Scale width based on the viewport */
+  min-height: 0vh;
+  /* width: auto; */
+  /* overflow: auto; */
+  /* right: 50%; */
+
+  /* max-height: 40vh; Limit height based on the viewport */
+  /* overflow-y: auto; Add scroll if content overflows */
+  /* white-space: normal; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   opacity: 0;  /* Make it transparent initially */
   transition: opacity 5s ease-in;  /* Smooth transition for opacity and height */
-  overflow: hidden;
+  /* left: 50%; /* Center the dropdown 
+  transform: translateX(-50%); Adjust for centering */
+  margin-top: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+
+  /* Adjust vertical position to be slightly below the button */
+  /* top: calc(100% + 10px); 10px below the button */
+
 }
 
 .dropdown:hover .dropdown-content {
+
   display: block;  /* Show the dropdown */
-  opacity: 1;  /* Fade in */
+  opacity: .9;  /* Fade in */
 }
 
 /* Links inside the dropdown */
@@ -293,6 +328,7 @@ nav a:hover {
 
 .description {
   gap: 10px;
+  /* margin-left:10px */
   /* margin-bottom:0px; */
 }
 
