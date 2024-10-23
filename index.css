@@ -1,21 +1,15 @@
-/* 
-@media (max-width: 768px) {
-  .dropdown-container {
-    max-width: 90vw; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
 
-  .dropdown-content {
-    max-width: 90vw;
-  }
-} */
 
 @media (max-width: 768px) {
   .dropdown-content {
     max-width: 90vw;
+  }
+  .App-header h1 {
+    margin-top: 50px;
+  }
+  .App-header p {
+    padding-right: 70px;
+    padding-left: 70px;
   }
 }
 
@@ -229,11 +223,6 @@ h2 {
   transform: scale(1.1);
 }
 
-/* .container img:active {
-  z-index: 1;
-  transform: scale(1.1);
-} */
-
 /* Style the button that triggers the dropdown */
 .dropbtn {
   background: transparent; 
@@ -247,43 +236,6 @@ h2 {
   background-color: transparent; /* Remove background color */
   padding: 0; /* Remove any padding */
 }
-
-/* Container for the dropdown content */
-/* .dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Hidden dropdown content by default */
-/*.dropdown-content {
-  background-color:#666464;
-  display: none;
-  position: absolute;
-  max-width: 60vw; /* Scale width based on the viewport 
-  min-height: 0vh;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  /* opacity: 0;  Make it transparent initially 
-  /* transition: opacity 5s ease-in;  Smooth transition for opacity and height 
-  margin-top: 15px;
-} */
-
-/* .dropdown:hover .dropdown-content {
-  display: block;  /* Show the dropdown 
-  opacity: .9;  /* Fade in 
-} */
-
-/* Links inside the dropdown */
-/* .dropdown-content a {
-  color: rgb(255, 255, 255);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block !important;
-}
-
-.dropdown-content a:hover {
-  background-color: #918383;
-} */
 
 .dropdown-content p {
   margin-right: 25px;
@@ -299,18 +251,12 @@ h2 {
 .dropdown-content ul {
   padding-left: 15px; /* Adjust this value to control indent */
   margin-left: 0px;/* Remove default margin */
-  /* list-style-position: inside; Keeps the bullet inside the content area */
 }
 
 .dropdown-content li {
   padding-left: 0;    /* Ensure no extra padding on the list items */
   color: #D3D3D3;
 }
-
-/* Show the dropdown content when hovering over the dropdown container */
-/* .dropdown:hover .dropdown-content {
-  display: block;
-} */
 
 nav {
   background-color: rgb(84, 71, 53);
@@ -348,4 +294,8 @@ nav a:hover {
 
 .description ul {
   margin-top:0px;
+}
+
+#contact {
+  background-color: rgb(84, 71, 53);
 }
