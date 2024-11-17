@@ -34,7 +34,7 @@
             font-size: larger;
             background-color: #666464;
         }
-    
+
         th,
         td {
             padding: 6px;
@@ -49,24 +49,25 @@
             display: inline-block;
         }
 
-            /* Hidden dropdown content by default */
+        /* Hidden dropdown content by default */
         .dropdown-content {
-            background-color:#666464;
+            background-color: #666464;
             display: none;
             position: absolute;
-            max-width: 100vw; /* Scale width based on the viewport */
+            max-width: 100vw;
+            /* Scale width based on the viewport */
             min-width: 21vw;
             min-height: 0vh;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
             align-items: inherit;
-            opacity: 90%; 
+            opacity: 90%;
             /* transition: opacity 5s ease-in;  Smooth transition for opacity and height */
             margin-top: 15px;
         }
 
         .dropdown-content table {
-            min-width:fit-content;
+            min-width: fit-content;
         }
 
         .dropdown-content a {
@@ -77,7 +78,7 @@
         }
 
         .show {
-            display:block !important;
+            display: block !important;
         }
 
         #about p {
@@ -96,6 +97,7 @@
             .body {
                 text-size-adjust: auto;
             }
+
             .charts-container {
                 flex-direction: column;
                 align-items: center;
@@ -106,9 +108,11 @@
                 align-items: center;
                 display: flex;
             }
+
             .dropbtn img {
-                transform:scale(1.2);
+                transform: scale(1.2);
             }
+
             .dropdown-container {
                 flex-direction: column;
                 align-items: center;
@@ -117,30 +121,33 @@
             }
 
             .dropdown-content {
-                left: 50%; /* Align left edge of the dropdown to the center */
-                transform: translateX(-50%); /* Shift it left by half of its width */
+                left: 50%;
+                /* Align left edge of the dropdown to the center */
+                transform: translateX(-50%);
+                /* Shift it left by half of its width */
                 max-width: 500vw;
                 align-items: inherit;
                 min-width: 70vw;
             }
 
-            #about p{
+            #about p {
                 margin-inline: 20px
             }
 
             #heading p {
-                font-size: 0.75em;;
+                font-size: 0.75em;
+                ;
             }
 
             nav a {
                 margin: 0 5px;
             }
+
             table {
                 width: 100%;
             }
 
         }
-
     </style>
 
     <title>Andrew Kelton</title>
@@ -176,32 +183,38 @@
         </div>
     </div>
 
-<div>
-    <div align="center">
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="enc3241-projects.html">ENC3241 Projects</a>
-            <a href="#courses">Courses</a>
-            <a href="#contact">Contact</a>
-            <a href="Andrew_Kelton_.pdf">Resumé</a>
-        </nav>
-    </div>
-    
-    <p class="note" style="font-weight: lighter; text-align:center; padding-bottom: 0px;">Note: Navigation Bar may require two taps to work.</p>
+    <div>
+        <div align="center">
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="enc3241-projects.html">ENC3241 Projects</a>
+                <a href="#courses">Courses</a>
+                <a href="#contact">Contact</a>
+                <a href="Andrew_Kelton_.pdf">Resumé</a>
+            </nav>
+        </div>
 
-    <div id="about">
-        <h2 font-weight="bold" align="center">About Me</h2>
+        <p class="note" style="font-weight: lighter; text-align:center; padding-bottom: 0px;">Note: Navigation Bar may
+            require two taps to work.</p>
 
-        <p align="left">
-            &emsp;My name is Andrew Kelton. I am pursuing a Bachelor's of Science in Computer Science at the University of Central Florida (UCF).
-            I am currently taking Systems Software, Calculus II, Computer Science II, and Writing for Technical Profession. This summer I hope to 
-            intern as a Software Engineer at Urban Sky in Denver, CO. In my freetime, I enjoy creating programs/apps involving machine learning, 
-            playing video games, and hanging out with my friends. Some of my professional interests include: Computer Vision, Machine Learning, 
-            Remote Sensing, and Data Analysis.
+        <div id="about">
+            <h2 font-weight="bold" align="center">About Me</h2>
 
-            <!-- &emsp;I am a Computer Science Student at the University of Central Florida (<b>UCF</b>) in Orlando, FL. Currently,
+            <p align="left">
+                &emsp;My name is Andrew Kelton. I am pursuing a Bachelor's of Science in Computer Science at the
+                University of Central Florida (UCF)
+                and will be graduating in December 2026.
+                I am currently taking Systems Software, Calculus II, Computer Science II, and Writing for Technical
+                Profession. This summer I hope to
+                intern as a Software Engineer at Urban Sky in Denver, CO. In my freetime, I enjoy creating programs/apps
+                involving machine learning,
+                playing video games, and hanging out with my friends. Some of my professional interests include:
+                Computer Vision, Machine Learning,
+                Remote Sensing, and Data Analysis.
+
+                <!-- &emsp;I am a Computer Science Student at the University of Central Florida (<b>UCF</b>) in Orlando, FL. Currently,
             I am in my second year <b>UCF</b>, however, I am in my third year of college since I took college courses my senior year of
             highschool at Florida Southwestern State College (<b>FSW</b>) in Fort Myers, FL. At <b>FSW</b>, is where I took my
             interest in programming and Computer Science serious. Before attending <b>FSW</b>, I had taken Codecademy's Python3
@@ -211,325 +224,342 @@
             find joy in solving problems and enjoy discovering multiple ways to arrive at a solution. Some of my
             professional interests include: <b>Computer Vision</b>, <b>Machine Learning</b>, <b>Remote Sensing</b>,
             <b>Data Analysis</b>, and <b>Artificial Intelligence</b>. -->
-        </p>
-    </div>
+            </p>
+        </div>
 
-    <div id="skills">
-        <h2 style="font-weight:bold; text-align:center;">Skills</h2>
-        <div class="charts-container">
-            <div class="chart-container">
-                <div class="chart-title" style="padding-top: 0px;">Programming Languages</div>
-                <div class="chart">
-                    <div class="bar" style="width: 90%; background-color:cornflowerblue;" data-width="90">
-                        <span class="label">Python</span>
+        <div id="skills">
+            <h2 style="font-weight:bold; text-align:center;">Skills</h2>
+            <div class="charts-container">
+                <div class="chart-container">
+                    <div class="chart-title" style="padding-top: 0px;">Programming Languages</div>
+                    <div class="chart">
+                        <div class="bar" style="width: 90%; background-color:cornflowerblue;" data-width="90">
+                            <span class="label">Python</span>
+                        </div>
+                        <div class="bar" style="width: 95%;" data-width="95">
+                            <span class="label">C</span>
+                        </div>
+                        <div class="bar" style="width: 66%; background-color:chocolate;" data-width="66">
+                            <span class="label">GoLang</span>
+                        </div>
+                        <div class="bar" style="width: 70%; background-color: crimson;" data-width="70">
+                            <span class="label">Java</span>
+                        </div>
+                        <div class="bar" style="width: 53%; background-color: blueviolet;" data-width="53">
+                            <span class="label">JavaScript</span>
+                        </div>
+                        <div class="bar" style="width: 80%; background-color: rgb(96, 115, 11);" data-width="80">
+                            <span class="label">Bash</span>
+                        </div>
+                        <div class="bar" style="width: 73%; background-color: rgb(13, 79, 129);" data-width="73">
+                            <span class="label">SQL</span>
+                        </div>
                     </div>
-                    <div class="bar" style="width: 95%;" data-width="95">
-                        <span class="label">C</span>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">Frameworks</div>
+                    <div class="chart">
+                        <div class="bar" style="width: 76%; background-color: red;" data-width="76">
+                            <span class="label">Flask</span>
+                        </div>
+                        <div class="bar" style="width: 54%; background-color: rgb(14, 83, 83);" data-width="54">
+                            <span class="label">Django</span>
+                        </div>
+                        <div class="bar" style="width: 41%; background-color: purple;" data-width="41">
+                            <span class="label">React.js</span>
+                        </div>
                     </div>
-                    <div class="bar" style="width: 66%; background-color:chocolate;" data-width="66">
-                        <span class="label">GoLang</span>
-                    </div>
-                    <div class="bar" style="width: 70%; background-color: crimson;" data-width="70">
-                        <span class="label">Java</span>
-                    </div>
-                    <div class="bar" style="width: 53%; background-color: blueviolet;" data-width="53">
-                        <span class="label">JavaScript</span>
-                    </div>
-                    <div class="bar" style="width: 80%; background-color: rgb(96, 115, 11);" data-width="80">
-                        <span class="label">Bash</span>
-                    </div>
-                    <div class="bar" style="width: 73%; background-color: rgb(13, 79, 129);" data-width="73">
-                        <span class="label">SQL</span>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">Other Computer Skills</div>
+                    <div class="chart">
+                        <div class="bar" style="width: 87%; background-color:cornflowerblue;" data-width="87">
+                            <span class="label">Microsoft365 </span>
+                        </div>
+                        <div class="bar" style="width: 96%;" data-width="96">
+                            <span class="label">DSA</span>
+                        </div>
+                        <div class="bar" style="width: 96%; background-color:chocolate;" data-width="96">
+                            <span class="label">Git</span>
+                        </div>
+                        <div class="bar" style="width: 92%; background-color: crimson;" data-width="92">
+                            <span class="label">Terminal</span>
+                        </div>
+                        <div class="bar" style="width: 48%; background-color: blueviolet;" data-width="48">
+                            <span class="label">Machine Learning</span>
+                        </div>
+                        <div class="bar" style="width: 80%; background-color: rgb(18, 88, 12);" data-width="80">
+                            <span class="label">APIs</span>
+                        </div>
+                        <div class="bar" style="width: 87%; background-color: rgb(6, 58, 110);" data-width="87">
+                            <span class="label">Databases</span>
+                        </div>
+                        <div class="bar" style="width: 73%; background-color: rgb(62, 82, 11);" data-width="73">
+                            <span class="label">Operating Systems</span>
+                        </div>
+                        <div class="bar" style="width: 40%; background-color: rgb(79, 8, 35);" data-width="40">
+                            <span class="label">HTML</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            <p class="note" style="font-weight: lighter; text-align:center; padding-bottom: 0px;">Percentages are an
+                estimate of my skill level and can only be viewed on a computer.</p>
+        </div>
 
-            <div class="chart-container">
-                <div class="chart-title">Frameworks</div>
-                <div class="chart">
-                    <div class="bar" style="width: 76%; background-color: red;" data-width="76">
-                        <span class="label">Flask</span>
-                    </div>
-                    <div class="bar" style="width: 54%; background-color: rgb(14, 83, 83);" data-width="54">
-                        <span class="label">Django</span>
-                    </div>
-                    <div class="bar" style="width: 41%; background-color: purple;" data-width="41">
-                        <span class="label">React.js</span>
+        <div id="projects">
+            <h2 style="font-weight:bold; text-align:center;">Projects</h2>
+            <div class="container" id="drop-projects">
+                <div class="dropdown">
+
+                    <button class="dropbtn" onclick="toggleDropdown('project1')">
+                        <img src="img_src/mlb_algo_logo.jpeg" alt="mlb_logo" class="App-logo">
+                    </button>
+                    <div class="dropdown-content" id="project1">
+                        <a style="font-size: 1.25em;" href="#projects"><b
+                                style="color:bisque; text-decoration: underline;">MLB ALGO</b> <span
+                                style="font-size: 0.8em;"><br>Link Coming Soon Spring 2025</span></a>
+                        <p><b>Description:</b> Machine Learning algorithm, predicts MLB game outcomes with a 70-80%
+                            accuracy. Top picks get posted to the X account. Created my own API for getting team
+                            predictions and data. Currently implementing the frontend in JavaScript with React.js.</p>
+                        <a>
+                            <div style="display:inline-flex; " class="description">
+                                <div>
+                                    <b>Languages</b>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>C</li>
+                                        <li>JavaScript</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <b>Frameworks</b>
+                                    <ul>
+                                        <li>Flask</li>
+                                        <li>ReactJS</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <b>APIs</b>
+                                    <ul>
+                                        <li>mlbstatsapi</li>
+                                        <li>The X API</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="display:inline-flex; " class="description">
+                                <div>
+                                    <b>Features</b>
+                                    <ul>
+                                        <li>Dynamic interactive website</li>
+                                        <li>Custom API</li>
+                                        <li>Client &amp; server-side support</li>
+                                        <li>Quick computing with C</li>
+                                        <li>SQL database</li>
+                                        <li>Machine Learning</li>
+                                        <li>Automatic X (Twitter) posts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </div>
 
-            <div class="chart-container">
-                <div class="chart-title">Other Computer Skills</div>
-                <div class="chart">
-                    <div class="bar" style="width: 87%; background-color:cornflowerblue;" data-width="87">
-                        <span class="label">Microsoft365 </span>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('project2')">
+                        <img src="img_src/file_sim.png" alt="file_sim_logo" class="App-logo">
+                    </button>
+                    <div class="dropdown-content" id="project2">
+                        <a href="https://github.com/AndrewKelton/filesystem-simulator"><b
+                                style="font-size: 1.25em; color:rgb(114, 150, 24); text-decoration: underline;">Filesystem
+                                Simulator</b> <span style="font-size: 0.8em;"><br>April 2024 - May 2024</span></a>
+                        <p><b>Description:</b> Command line filesystem simulator in C. Requires user to login and parses
+                            user commands executing functions the user has inputted. Allows users to
+                            create/write/delete/save files inside the terminal.</p>
+                        <a>
+                            <div style="display:inline-flex; " class="description">
+                                <div>
+                                    <b>Languages</b>
+                                    <ul>
+                                        <li>C</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <b>Features</b>
+                                    <ul>
+                                        <li>Advanced DSA</li>
+                                        <li>Custom commands</li>
+                                        <li>Parsing user commands</li>
+                                        <li>File creating/writing/deletion/saving</li>
+                                        <li>Directory navigation</li>
+                                        <li>Root and user accounts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="bar" style="width: 96%;" data-width="96">
-                        <span class="label">DSA</span>
-                    </div>
-                    <div class="bar" style="width: 96%; background-color:chocolate;" data-width="96">
-                        <span class="label">Git</span>
-                    </div>
-                    <div class="bar" style="width: 92%; background-color: crimson;" data-width="92">
-                        <span class="label">Terminal</span>
-                    </div>
-                    <div class="bar" style="width: 48%; background-color: blueviolet;" data-width="48">
-                        <span class="label">Machine Learning</span>
-                    </div>
-                    <div class="bar" style="width: 80%; background-color: rgb(18, 88, 12);" data-width="80">
-                        <span class="label">APIs</span>
-                    </div>
-                    <div class="bar" style="width: 87%; background-color: rgb(6, 58, 110);" data-width="87">
-                        <span class="label">Databases</span>
-                    </div>
-                    <div class="bar" style="width: 73%; background-color: rgb(62, 82, 11);" data-width="73">
-                        <span class="label">Operating Systems</span>
-                    </div>
-                    <div class="bar" style="width: 40%; background-color: rgb(79, 8, 35);" data-width="40">
-                        <span class="label">HTML</span>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('project3')">
+                        <img src="img_src/my_website_go.png" alt="file_sim_logo" class="App-logo">
+                    </button>
+                    <div class="dropdown-content" id="project3">
+                        <a href="https://github.com/AndrewKelton/myWebsite"><b
+                                style="font-size: 1.25em; color:rgb(63, 172, 176); text-decoration: underline;">myWebsite</b>
+                            <span style="font-size: 0.8em;"><br>February 2024 - March 2024</span></a>
+                        <p><b>Description:</b> Dynamic website with a login page, requiring users to login or register
+                            before accessing site. Uses a CAPTCHA after login, then allows users to navigate pages of
+                            the site.</p>
+                        <a>
+                            <div style="display:inline-flex; " class="description">
+                                <div>
+                                    <b>Languages</b>
+                                    <ul>
+                                        <li>GoLang</li>
+                                        <li>Python</li>
+                                        <li>JavaScript</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <b>Features</b>
+                                    <ul>
+                                        <li>Login system</li>
+                                        <li>CAPTCHA</li>
+                                        <li>Dynamic website</li>
+                                        <li>Hashed passwords</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <p class="note" style="font-weight: lighter; text-align:center; padding-bottom: 0px;">Percentages are an estimate of my skill level and can only be viewed on a computer.</p>
-    </div>
 
-    <div id="projects">
-        <h2 style="font-weight:bold; text-align:center;">Projects</h2>
-        <div class="container" id="drop-projects">
-            <div class="dropdown">
+        <div align="center" id="courses" style="margin-right: 10px; margin-left: 10px">
+            <h2 style="font-weight:bold; margin:20px;">Courses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Course Code</th>
+                        <th>Language</th>
+                    </tr>
+                </thead>
 
-                <button class="dropbtn" onclick="toggleDropdown('project1')">
-                    <img src="img_src/mlb_algo_logo.jpeg" alt="mlb_logo" class="App-logo">
+                <tbody>
+                    <tr>
+                        <td>Computer Science I</td>
+                        <td>COP 3502</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Science II</td>
+                        <td>COP 3503</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>Systems Software</td>
+                        <td>COP 3402</td>
+                        <td>C & Assembly</td>
+                    </tr>
+                    <tr>
+                        <td>Object Oriented Programming</td>
+                        <td>COP 3330</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>Security in Computing</td>
+                        <td>CIS 3360</td>
+                        <td>C & GoLang</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Logic & Organization</td>
+                        <td>CDA 3103</td>
+                        <td>C & Assembly</td>
+                    </tr>
+                    <tr>
+                        <td>Intro to Programming with C</td>
+                        <td>COP 3223</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Intro to Computer Programming</td>
+                        <td>COP 1000</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>Calculus I</td>
+                        <td>MAC 2311</td>
+                        <td>Calculus</td>
+                    </tr>
+                    <tr>
+                        <td>Calculus II</td>
+                        <td>MAC 2312</td>
+                        <td>Calculus</td>
+                    </tr>
+                    <tr>
+                        <td>Intro to Discrete Structures</td>
+                        <td>COT 3100</td>
+                        <td>Discrete Math</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="future-courses" align="center">
+            <div align="center" class="dropdown" style="margin-right: 10px; margin-left: 10px">
+                <button class="dropbtn" onclick="toggleDropdown('spring-courses')">
+                    <h2 style="font-weight:bold; margin:20px;">Spring 2025 Courses</h2>
                 </button>
-                <div class="dropdown-content" id="project1">
-                    <a style="font-size: 1.25em;" href="#projects"><b style="color:bisque; text-decoration: underline;">MLB ALGO</b> <span style="font-size: 0.8em;"><br>Link Coming Soon Spring 2025</span></a>
-                    <p><b>Description:</b> Machine Learning algorithm, predicts MLB game outcomes with a 70-80% accuracy. Top picks get posted to the X account. Created my own API for getting team predictions and data. Currently implementing the frontend in JavaScript with React.js.</p>
-                    <a>
-                        <div style="display:inline-flex; " class="description">
-                            <div>
-                                <b>Languages</b>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>C</li>
-                                    <li>JavaScript</li>
-                                    <li>SQL</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <b>Frameworks</b>
-                                <ul>
-                                    <li>Flask</li>
-                                    <li>ReactJS</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <b>APIs</b>
-                                <ul>
-                                    <li>mlbstatsapi</li>
-                                    <li>The X API</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div style="display:inline-flex; " class="description">
-                            <div>
-                                <b>Features</b>
-                                <ul>
-                                    <li>Dynamic interactive website</li>
-                                    <li>Custom API</li>
-                                    <li>Client &amp; server-side support</li>
-                                    <li>Quick computing with C</li>
-                                    <li>SQL database</li>
-                                    <li>Machine Learning</li>
-                                    <li>Automatic X (Twitter) posts</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
 
-            <div class="dropdown">
-                <button class="dropbtn" onclick="toggleDropdown('project2')">
-                    <img src="img_src/file_sim.png" alt="file_sim_logo" class="App-logo">
-                </button>
-                <div class="dropdown-content" id="project2">
-                    <a href="https://github.com/AndrewKelton/filesystem-simulator"><b style="font-size: 1.25em; color:rgb(114, 150, 24); text-decoration: underline;">Filesystem Simulator</b> <span style="font-size: 0.8em;"><br>April 2024 - May 2024</span></a>
-                    <p><b>Description:</b> Command line filesystem simulator in C. Requires user to login and parses user commands executing functions the user has inputted. Allows users to create/write/delete/save files inside the terminal.</p>
-                    <a>
-                        <div style="display:inline-flex; " class="description">
-                            <div>
-                                <b>Languages</b>
-                                <ul>
-                                    <li>C</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <b>Features</b>
-                                <ul>
-                                    <li>Advanced DSA</li>
-                                    <li>Custom commands</li>
-                                    <li>Parsing user commands</li>
-                                    <li>File creating/writing/deletion/saving</li>
-                                    <li>Directory navigation</li>
-                                    <li>Root and user accounts</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+                <div id="spring-courses" class="dropdown-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Course Name</th>
+                                <th>Course Code</th>
+                            </tr>
+                        </thead>
 
-            <div class="dropdown">
-                <button class="dropbtn" onclick="toggleDropdown('project3')">
-                    <img src="img_src/my_website_go.png" alt="file_sim_logo" class="App-logo">
-                </button>
-                <div class="dropdown-content" id="project3">
-                    <a href="https://github.com/AndrewKelton/myWebsite"><b style="font-size: 1.25em; color:rgb(63, 172, 176); text-decoration: underline;">myWebsite</b> <span style="font-size: 0.8em;"><br>February 2024 - March 2024</span></a>
-                    <p><b>Description:</b> Dynamic website with a login page, requiring users to login or register before accessing site. Uses a CAPTCHA after login, then allows users to navigate pages of the site.</p>
-                    <a>
-                        <div style="display:inline-flex; " class="description">
-                            <div>
-                                <b>Languages</b>
-                                <ul>
-                                    <li>GoLang</li>
-                                    <li>Python</li>
-                                    <li>JavaScript</li>
-                                    <li>SQL</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <b>Features</b>
-                                <ul>
-                                    <li>Login system</li>
-                                    <li>CAPTCHA</li>
-                                    <li>Dynamic website</li>
-                                    <li>Hashed passwords</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </a>
+                        <tbody>
+                            <tr>
+                                <td>Robot Vision</td>
+                                <td>CAP 4453</td>
+                            </tr>
+                            <tr>
+                                <td>Matrix & Linear Algebra</td>
+                                <td>MAS 3105</td>
+                            </tr>
+                            <tr>
+                                <td>Physics I w/Calculus I</td>
+                                <td>PHY 2048</td>
+                            </tr>
+                            <tr>
+                                <td>Statistical Methods I</td>
+                                <td>STA 2023</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
-
-    <div align="center" id="courses" style="margin-right: 10px; margin-left: 10px">
-        <h2 style="font-weight:bold; margin:20px;">Courses</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Course Name</th>
-                    <th>Course Code</th>
-                    <th>Language</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Computer Science I</td>
-                    <td>COP 3502</td>
-                    <td>C</td>
-                </tr>
-                <tr>
-                    <td>Computer Science II</td>
-                    <td>COP 3503</td>
-                    <td>Java</td>
-                </tr>
-                <tr>
-                    <td>Systems Software</td>
-                    <td>COP 3402</td>
-                    <td>C & Assembly</td>
-                </tr>
-                <tr>
-                    <td>Object Oriented Programming</td>
-                    <td>COP 3330</td>
-                    <td>Java</td>
-                </tr>
-                <tr>
-                    <td>Security in Computing</td>
-                    <td>CIS 3360</td>
-                    <td>C & GoLang</td>
-                </tr>
-                <tr>
-                    <td>Computer Logic & Organization</td>
-                    <td>CDA 3103</td>
-                    <td>C & Assembly</td>
-                </tr>
-                <tr>
-                    <td>Intro to Programming with C</td>
-                    <td>COP 3223</td>
-                    <td>C</td>
-                </tr>
-                <tr>
-                    <td>Intro to Computer Programming</td>
-                    <td>COP 1000</td>
-                    <td>Python</td>
-                </tr>
-                <tr>
-                    <td>Calculus I</td>
-                    <td>MAC 2311</td>
-                    <td>Calculus</td>
-                </tr>
-                <tr>
-                    <td>Calculus II</td>
-                    <td>MAC 2312</td>
-                    <td>Calculus</td>
-                </tr>
-                <tr>
-                    <td>Intro to Discrete Structures</td>
-                    <td>COT 3100</td>
-                    <td>Discrete Math</td>
-                </tr>
-            </tbody>
-        </table>
+    <div style="height: 20px;"></div>
+    <div style="height: 160px" id="contact">
+        <h3 style="padding-top:10px; margin-left:10px">Contact</h3>
+        <ul style="margin-left:5px"><a href="https://www.linkedin.com/in/andrew-kelton"><img
+                    src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555">
+                https://www.linkedin.com/in/andrew-kelton<a></ul>
+        <ul style="margin-left:5px"><a href="mailto: andrew7kelton@gmail.com"><img
+                    src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white">
+                andrew7kelton@gmail.com</a></ul>
     </div>
-    
-    <div id="future-courses" align="center">
-        <div align="center" class="dropdown" style="margin-right: 10px; margin-left: 10px">
-            <button class="dropbtn" onclick="toggleDropdown('spring-courses')">
-                <h2 style="font-weight:bold; margin:20px;">Spring 2025 Courses</h2>
-            </button>
-
-            <div id="spring-courses" class="dropdown-content">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Course Name</th>
-                            <th>Course Code</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Robot Vision</td>
-                            <td>CAP 4453</td>
-                        </tr>
-                        <tr>
-                            <td>Matrix & Linear Algebra</td>
-                            <td>MAS 3105</td>
-                        </tr>
-                        <tr>
-                            <td>Physics I w/Calculus I</td>
-                            <td>PHY 2048</td>
-                        </tr>
-                        <tr>
-                            <td>Statistical Methods I</td>
-                            <td>STA 2023</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-<div style="height: 20px;"></div>
-<div style="height: 160px" id="contact">
-    <h3 style="padding-top:10px; margin-left:10px">Contact</h3>
-        <ul style="margin-left:5px"><a href="https://www.linkedin.com/in/andrew-kelton"><img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555"> https://www.linkedin.com/in/andrew-kelton<a></ul>
-        <ul style="margin-left:5px"><a href="mailto: andrew7kelton@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white"> andrew7kelton@gmail.com</a></ul>
-</div>
 
     <!-- JavaScript for some user interactions -->
     <script>
@@ -539,16 +569,16 @@
             var dropdown = document.getElementById(dropdownId);
             dropdown.classList.toggle("show");
             console.log('Dropdown toggled: ', dropdown);
-            
+
             if (dropdown.classList.contains("show")) {
                 var dropdownRect = dropdown.getBoundingClientRect();
                 var dropdownBot = dropdownRect.bottom;  // Dropdown's distance from the bottom of the viewport
                 var dropdownTop = dropdownRect.top; // Dropdown's distance from the top of the viewport
                 var windowHeight = window.innerHeight;  // Viewport height
-                var scrollThreshold = 50; 
+                var scrollThreshold = 50;
 
                 // Scroll dynamically based on the dropdown's bottom position
-                setTimeout(function() {
+                setTimeout(function () {
                     if (dropdownBot > windowHeight - scrollThreshold) {
                         // Scroll down if the dropdown is too low on the screen
                         window.scrollBy({
@@ -559,7 +589,7 @@
                     } else if (dropdownTop < scrollThreshold * 2.2) {
                         // Scroll up if the dropdown is too high on the screen
                         window.scrollBy({
-                            top: -(dropdownTop + scrollThreshold), 
+                            top: -(dropdownTop + scrollThreshold),
                             behavior: 'smooth'
                         });
                         console.log('scrolled up');
@@ -572,7 +602,7 @@
         let lastScrollTop = 0;
         const nav = document.querySelector('nav');
 
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
             if (scrollTop > lastScrollTop) {
