@@ -1,0 +1,302 @@
+/* css formatting... enjoy */
+
+@media (max-width: 768px) {
+  .dropdown-content {
+    max-width: 90vw;
+  }
+  .App-header h1 {
+    margin-top: 50px;
+  }
+  .App-header p {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .charts-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 16vmin;
+  margin: 10px;
+  /* background-color: transparent; */
+}
+
+.App-header {
+  padding-top: 10px;
+  align-items: center;
+  background-color: rgb(84, 71, 53);
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: #D3D3D3;
+}
+
+.App-header h1 {
+  margin-bottom: 5px;
+  /* Adjusts the space below the header */
+}
+
+.App-header p {
+  margin: 5px 0;
+  /* Reduces the space above and below the paragraph */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Aligns items to the top */
+  /* min-height: 5vh; */
+  gap: 5px;
+  padding: 0 20px;
+  /* Adds padding to the left and right */
+  padding-top: 0 5px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #333333;
+  margin: 0;
+  /* Ensures no default margin around the body */
+  font-family: Arial, sans-serif;
+  /* Optional: Set a default font */
+  color: #D3D3D3;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+.note {
+  font-size: 0.9em;
+  /* Make the note slightly smaller */
+  color: #666666;
+  /* Optional: Use a lighter color for the note */
+  /* margin-top: 5px; */
+}
+
+#skills {
+  margin: 0px;
+  /* Optional margin around the skills section */
+}
+
+.charts-container {
+  display: flex;
+  /* Use flexbox to align charts side by side */
+  justify-content: space-evenly;
+  /* Space between the two charts */
+  align-items: flex-start;
+  /* Align items at the top */
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  /* Stack title and chart vertically */
+  align-items: center;
+  /* Center-align items */
+
+  /* margin-right: 0px; Space to the right of the first chart */
+}
+
+.other-chart .chart {
+  width: 250px;
+  /* Set width for the frameworks chart */
+  height: auto;
+}
+
+.smaller-chart .chart {
+  width: 200px;
+  /* Set width for the frameworks chart */
+  height: auto;
+  /* Allow height to adjust automatically */
+}
+
+.chart {
+  width: 300px;
+  /* Set a default width for programming languages chart */
+  height: auto;
+  /* Allow height to adjust automatically */
+}
+
+.bar {
+  height: 20px;
+  /* Height of each bar */
+  background-color: blue;
+  transition: width 0.5s ease-in-out;
+  /* For animation */
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  position: relative;
+}
+
+.bar:hover {
+  z-index: 10;
+  /* Bring bar to the front */
+  transform: scale(1.1);
+  /* Slightly enlarge the bar */
+  background-color: darkblue;
+  /* Change color for visual feedback */
+}
+
+.bar::after {
+  content: attr(data-width) '%';
+  /* Display the percentage from the data-width attribute */
+  position: absolute;
+  top: -25px;
+  /* Position the label above the bar */
+  left: 50%;
+  transform: translateX(-50%);
+  /* Center the label horizontally */
+  background-color: #333;
+  /* Dark background for better visibility */
+  color: white;
+  /* Text color */
+  padding: 2px 5px;
+  /* Padding around the label */
+  border-radius: 3px;
+  /* Rounded corners */
+  font-size: 12px;
+  /* Font size for the percentage text */
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 0.3s ease;
+  /* Smooth transition for visibility */
+}
+
+.bar:hover::after {
+  opacity: 1;
+  /* Show the percentage when hovering */
+}
+
+.label {
+  position: sticky;
+  /* Absolute positioning */
+  left: 0;
+  padding-left: 5px;
+  /* Align to the left of the bar */
+  top: 50%;
+  /* Center the label vertically */
+  transform: translateY(-50%);
+  /* Adjust vertical alignment */
+  color: white;
+  /* Text color */
+  font-weight: bold;
+  /* Bold text */
+}
+
+.chart-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container img:hover {
+  z-index: 1;
+  transform: scale(1.1);
+}
+
+/* Style the button that triggers the dropdown */
+.dropbtn {
+  background: transparent; 
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropbtn img {
+  background-color: transparent; /* Remove background color */
+  padding: 0; /* Remove any padding */
+}
+
+.dropdown-content p {
+  margin-right: 25px;
+  margin-top:0px;
+  margin-bottom: 0px;
+  margin-left:25px;
+}
+
+.dropdown-content p b {
+  color:white;
+}
+
+.dropdown-content ul {
+  padding-left: 15px; /* Adjust this value to control indent */
+  margin-left: 0px;/* Remove default margin */
+}
+
+.dropdown-content li {
+  padding-left: 0;    /* Ensure no extra padding on the list items */
+  color: #D3D3D3;
+}
+
+nav {
+  background-color: rgb(84, 71, 53);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  align-content: center;
+  width: 100vw;
+  transition: top 0.3s;
+  z-index: 1000;
+  opacity: 90%;
+}
+
+nav.hidden {
+  top: -60px; /* Adjust based on your nav height to hide it */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: rgb(84, 71, 53);
+  background-color: white;
+  border-radius: 2px;
+  border-style: solid;
+}
+
+.description {
+  gap: 10px;
+}
+
+.description ul {
+  margin-top:0px;
+}
+
+#contact {
+  background-color: rgb(84, 71, 53);
+}
