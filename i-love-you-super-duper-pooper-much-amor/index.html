@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="i love you" />
+    <title>Happy Valentine's Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff3366;
+        }
+        .photo-section {
+            margin: 20px;
+            text-align:center;
+            /* align-content:start; */
+        }
+        .photo-section img {
+            width: 70%;
+            /* max-width: 200px; */
+            height: auto;
+            /* height: 40%; */
+            border: 5px solid #ff3366;
+            margin: 10px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+            /* gap: 20px; Space between items */
+            justify-content: center; /* Center the grid */
+        }
+        figure {
+            margin: 0;
+            text-align:center;
+        }
+        figcaption {
+            margin-top: -10px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .heart {
+            position: absolute;
+            --c: red;
+            width: 200px;
+            aspect-ratio: 1;
+            border-image: radial-gradient(var(--c) 69%,#0000 70%) 84.5%/50%;
+            clip-path: polygon(-42% 0,50% 91%, 142% 0);
+
+            /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+            animation: float 5s infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh);
+                opacity: 0;
+            }
+        }
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Switch to 1 column */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Happy Valentine's Day Amor!</h1>
+    <!-- <div class="photo-section"> -->
+    <h2>Our Memories</h2>
+    
+    <div class="photo-section">
+        <h3>Sunset @ Naples</h3>
+        <div class="grid-container">
+            <figure>
+                <img src="valentine_src/naples.jpg" alt="naples">
+            </figure>
+            <figure>
+                <img src="valentine_src/naples3.jpg" alt="naples">
+            </figure>
+        </div>
+        <div class="grid-container"  style="display:block !important;">
+            <figure>
+                <img style="width:40%" src="valentine_src/naples2.jpg" alt="naples">
+            </figure>
+        </div>
+    </div>
+
+    <div class="photo-section">
+        <h3>Orlando pics</h3>
+        <div class="grid-container">
+            <figure>
+                <img src="valentine_src/capy.jpg" alt="capy">
+                <figcaption>capybaras!!</figcaption>
+            </figure>
+            <figure>
+                <img src="valentine_src/capy2.jpg" alt="capy2" alt="capy2">
+                <figcaption>more capybaras!!</figcaption>
+            </figure>
+        </div>
+        <div class="grid-container" style="display:block !important;">
+            <figure>
+                <img style="width: 40%;" src="valentine_src/celeb.jpeg" alt="celeb">
+                <figcaption>snow in celebration!!</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="photo-section">
+        <h3>Colorado Trip</h3>
+        <div class="grid-container">
+            <figure>
+                <img src="valentine_src/kisses.jpg" alt="kisses">
+                <figcaption>kisses in @ crested butt</figcaption>
+            </figure>
+            <figure>
+                <img src="valentine_src/boop.jpg" alt="boop">
+                <figcaption>more crested butt</figcaption>
+            </figure>
+            <figure>
+                <img src="valentine_src/bad-pics.jpeg" alt="bad pics">
+                <figcaption>our bad pic on top of crested butt</figcaption>
+            </figure>
+            <figure>
+                <img src="valentine_src/hiking.jpg" alt="hiking">
+                <figcaption>more hiking kisses!</figcaption>
+            </figure>
+            <figure>
+                <img src="valentine_src/hot dog.jpg" alt="hot dog">
+                <figcaption>hot dog @ rockies game</figcaption>
+            </figure>
+            <figure>
+                <img src="valentine_src/breck.jpg" alt="breck">
+                <figcaption>in breck</figcaption>
+            </figure>
+            <figure>
+                <img src="valentine_src/breck2.jpg" alt="breck2">
+                <figcaption>in breck, dropping my phone in the water</figcaption>
+            </figure>
+            <figure>
+                <img src="valentine_src/denver.jpg" alt="denver">
+                <figcaption>in downtown denver</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="photo-section">
+        <h3>Miami pics</h3>
+        <div class="grid-container">
+            <figure>
+                <img src="valentine_src/January.jpeg" alt="beach">
+                <figcaption>sunset @ miami beach</figcaption>
+            </figure>
+            <figure>
+                <img src="valentine_src/miami2.jpg" alt="kiss dtwn miami">
+                <figcaption>kiss @ miami skyline</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="photo-section">
+        <h3>where it all began</h3>
+        <div class="grid-container" style="display:block !important;">
+            <figure>
+                <img style="width: 40%;" src="valentine_src/Kabooki.jpeg" alt="first date">
+                <figcaption>our first date</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- hearts on screen -->
+    <div class="hearts">
+    </div>
+
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+            document.querySelector('.hearts').appendChild(heart);
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+        setInterval(createHeart, 300);
+    </script>
+    
+</body>
+</html>
