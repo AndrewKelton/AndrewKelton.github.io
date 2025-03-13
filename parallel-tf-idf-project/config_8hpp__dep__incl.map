@@ -1,0 +1,4 @@
+<map id="include/config.hpp" name="include/config.hpp">
+<area shape="rect" id="node1" title="Contains default flag features for controlling the generation of output files." alt="" coords="26,5,167,32"/>
+<area shape="rect" id="node2" href="$flag__handler_8hpp.html" title="Handles user print flags and triggers the appropriate print functions." alt="" coords="5,80,188,107"/>
+</map>

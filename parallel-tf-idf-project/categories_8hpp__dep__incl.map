@@ -1,0 +1,8 @@
+<map id="include/categories.hpp" name="include/categories.hpp">
+<area shape="rect" id="node1" title="Contains Category class and functions to classify Document(s)." alt="" coords="543,5,713,32"/>
+<area shape="rect" id="node2" href="$document_8hpp.html" title="Defines the Document and Corpus classes and their related functions." alt="" coords="485,80,651,107"/>
+<area shape="rect" id="node5" href="$flag__handler_8hpp.html" title="Handles user print flags and triggers the appropriate print functions." alt="" coords="678,155,861,181"/>
+<area shape="rect" id="node3" href="$count__vectorization_8hpp.html" title="Provides functions to vectorize a Corpus object." alt="" coords="5,155,235,181"/>
+<area shape="rect" id="node4" href="$file__operations_8hpp.html" title="Provides file handling utilities for loading, reading, and saving data." alt="" coords="259,155,458,181"/>
+<area shape="rect" id="node6" href="$preprocess_8hpp.html" title="Handles text preprocessing tasks such as stemming and text normalization." alt="" coords="482,155,654,181"/>
+</map>
