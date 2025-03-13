@@ -200,6 +200,7 @@
                 <a href="#about">About Me</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
+                <a href="parallel-tf-idf-project/index.html">Parallel TF-IDF Project</a>
                 <a href="#courses">Courses</a>
                 <a href="#contact">Contact</a>
                 <a href="pdf_src/Andrew_Kelton.pdf">Resumé</a>
@@ -237,7 +238,7 @@
                         <div class="bar" style="width: 95%;" data-width="95">
                             <span class="label">C</span>
                         </div>
-                        <div class="bar" style="width: 63%; background-color:rgb(42, 169, 228);" data-width="63">
+                        <div class="bar" style="width: 72%; background-color:rgb(42, 169, 228);" data-width="72">
                             <span class="label">C++</span>
                         </div>
                         <div class="bar" style="width: 55%; background-color:chocolate;" data-width="55">
@@ -294,7 +295,7 @@
                         <div class="bar" style="width: 48%; background-color: blueviolet;" data-width="48">
                             <span class="label">Machine Learning</span>
                         </div>
-                        <div class="bar" style="width: 33%; background-color: rgb(41, 91, 73);" data-width="33">
+                        <div class="bar" style="width: 50%; background-color: rgb(41, 91, 73);" data-width="50">
                             <span class="label">Parallelism</span>
                         </div>
                         <div class="bar" style="width: 80%; background-color: rgb(18, 88, 12);" data-width="80">
@@ -309,6 +310,9 @@
                         <div class="bar" style="width: 40%; background-color: rgb(79, 8, 35);" data-width="40">
                             <span class="label">HTML</span>
                         </div>
+                        <div class="bar" style="width: 32%; background-color: rgb(153, 109, 126);" data-width="32">
+                            <span class="label">NLP</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -320,6 +324,45 @@
             <h2 style="font-weight:bold; text-align:center;">Projects</h2>
             <div class="container" id="drop-projects">
                 <div class="dropdown">
+
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="toggleDropdown('project0')">
+                            <img src="img_src/tf-idf-logo.png" alt="ff-idf-logo" class="App-logo">
+                        </button>
+                        <div class="dropdown-content" id="project0">
+                            <a href="https://github.com/AndrewKelton/Parallel_TF-IDF_Classification"><b
+                                    style="font-size: 1.25em; color:rgb(114, 150, 24); text-decoration: underline;">Parallel TF-IDF Vectorizer and Text Classifier</b> <span style="font-size: 0.8em;"><br>January 2025 - April 2025</span></a>
+                            <p><b>Description:</b> Parallel TF-IDF vectorizer and text classifier written in C++. Receives training
+                            data, and computes TF-IDF scores for all documents in Corpus, sorting documents in their respective category. 
+                            Receives un-trained data, computes TF-IDF scores, classifies unknown document categories using cosine similarity
+                            against trained data, ratio (0.8 trained: 0.2 un-trained).
+                            </p>
+                            <a>
+                                <div style="display:inline-flex; " class="description">
+                                    <div>
+                                        <b>Languages</b>
+                                        <ul>
+                                            <li>C++</li>
+                                            <li>Bash</li>
+                                            <li>Python</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <b>Features</b>
+                                        <ul>
+                                            <li>Multi-threading/Concurrency</li>
+                                            <li>Custom Build Environment</li>
+                                            <li>Natural Language Preprocessing</li>
+                                            <li>Test Automation</li>
+                                            <li>Comparison between parallel and sequential TF-IDF in C++</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- <a href="parallel-tf-idf-project/index.html">Parallel TF-IDF Project</a> -->
+                    </div>
+    
 
                     <button class="dropbtn" onclick="toggleDropdown('project1')">
                         <img src="img_src/mlb_algo_logo.jpeg" alt="mlb_logo" class="App-logo">
