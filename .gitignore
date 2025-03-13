@@ -1,0 +1,20 @@
+*.pdf
+# !Andrew_Kelton_.pdf
+aboutme.html
+andrewkelton.me-20241023T201004.html
+enc3241-projects.html
+filesystem_simulator.html
+Kelton_Andrew_Cover.docx
+mlb_algo.html
+my_website.html
+project1.html
+project2.html
+project3.html
+saved.html
+
+.vscode
+
+# *.html
+!index.html
+
+.DS_Store
