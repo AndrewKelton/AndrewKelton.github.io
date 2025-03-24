@@ -1,6 +1,0 @@
-<map id="include/count_vectorization.hpp" name="include/count_vectorization.hpp">
-<area shape="rect" id="node1" title="Provides functions to vectorize a Corpus object." alt="" coords="189,5,419,32"/>
-<area shape="rect" id="node2" href="$main-test-non-optimized-parallel_8cpp.html" title="Main program for testing parallel TF&#45;IDF computation with a fixed number of threads." alt="" coords="5,80,179,121"/>
-<area shape="rect" id="node3" href="$main-test-parallel_8cpp.html" title="Main program for testing parallel TF&#45;IDF computation with command&#45;line input." alt="" coords="203,87,405,114"/>
-<area shape="rect" id="node4" href="$main-test-sequential_8cpp.html" title="Main program for testing sequential TF&#45;IDF computation." alt="" coords="429,87,651,114"/>
-</map>
