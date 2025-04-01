@@ -1,0 +1,10 @@
+<map id="include/categories.hpp" name="include/categories.hpp">
+<area shape="rect" id="node1" title="Contains Category class and functions to classify Document(s)." alt="" coords="633,5,802,32"/>
+<area shape="rect" id="node2" href="$document_8hpp.html" title="Defines the Document and Corpus classes and their related functions." alt="" coords="574,80,741,107"/>
+<area shape="rect" id="node7" href="$flag__handler_8hpp.html" title="Handles user print flags and triggers the appropriate print functions." alt="" coords="873,162,1055,189"/>
+<area shape="rect" id="node3" href="$count__vectorization_8hpp.html" title="Provides functions to vectorize a Corpus object." alt="" coords="5,162,235,189"/>
+<area shape="rect" id="node5" href="$file__operations-prev_8hpp.html" title=" " alt="" coords="259,155,429,196"/>
+<area shape="rect" id="node6" href="$file__operations_8hpp.html" title="Provides file handling utilities for loading, reading, and saving data." alt="" coords="454,162,653,189"/>
+<area shape="rect" id="node8" href="$preprocess_8hpp.html" title="Handles text preprocessing tasks such as stemming and text normalization." alt="" coords="677,162,849,189"/>
+<area shape="rect" id="node4" href="$TFIDF_8hpp.html" title="Defines the TFIDF_ class, which implements methods for processing trained and untrained data and calc..." alt="" coords="485,244,622,271"/>
+</map>

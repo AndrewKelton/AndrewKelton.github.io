@@ -1,0 +1,7 @@
+<map id="TFIDF::TFIDF_" name="TFIDF::TFIDF_">
+<area shape="rect" id="node1" title="The main class for handling TF&#45;IDF calculations, training data processing, and untrained data classif..." alt="" coords="376,81,488,108"/>
+<area shape="rect" id="node2" href="$classcorpus_1_1Corpus.html" title="Represents a collection of documents (corpus) for text analysis." alt="" coords="47,5,166,32"/>
+<area shape="rect" id="node3" href="$structTFIDF_1_1TFIDF___1_1Timer.html" title="A structure used for measuring performance during the TF&#45;IDF computation." alt="" coords="28,56,185,83"/>
+<area shape="rect" id="node4" href="$structTFIDF_1_1TFIDF___1_1InputFiles.html" title="Holds the file paths for input and output files." alt="" coords="15,107,198,133"/>
+<area shape="rect" id="node5" href="$structTFIDF_1_1TFIDF___1_1TaskSettings.html" title="Configuration settings related to the task, such as parallel processing and output options." alt="" coords="5,157,208,184"/>
+</map>

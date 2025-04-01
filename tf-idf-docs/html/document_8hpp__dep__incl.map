@@ -1,0 +1,9 @@
+<map id="include/document.hpp" name="include/document.hpp">
+<area shape="rect" id="node1" title="Defines the Document and Corpus classes and their related functions." alt="" coords="470,5,637,32"/>
+<area shape="rect" id="node2" href="$count__vectorization_8hpp.html" title="Provides functions to vectorize a Corpus object." alt="" coords="5,87,235,114"/>
+<area shape="rect" id="node4" href="$file__operations-prev_8hpp.html" title=" " alt="" coords="259,80,429,121"/>
+<area shape="rect" id="node5" href="$file__operations_8hpp.html" title="Provides file handling utilities for loading, reading, and saving data." alt="" coords="454,87,653,114"/>
+<area shape="rect" id="node6" href="$flag__handler_8hpp.html" title="Handles user print flags and triggers the appropriate print functions." alt="" coords="677,87,859,114"/>
+<area shape="rect" id="node7" href="$preprocess_8hpp.html" title="Handles text preprocessing tasks such as stemming and text normalization." alt="" coords="883,87,1055,114"/>
+<area shape="rect" id="node3" href="$TFIDF_8hpp.html" title="Defines the TFIDF_ class, which implements methods for processing trained and untrained data and calc..." alt="" coords="485,169,622,196"/>
+</map>

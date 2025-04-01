@@ -1,0 +1,11 @@
+<map id="include/utils.hpp" name="include/utils.hpp">
+<area shape="rect" id="node1" title="Header&#45;only utility library with common data types and functions." alt="" coords="777,5,906,32"/>
+<area shape="rect" id="node2" href="$categories_8hpp.html" title="Contains Category class and functions to classify Document(s)." alt="" coords="757,80,926,107"/>
+<area shape="rect" id="node3" href="$document_8hpp.html" title="Defines the Document and Corpus classes and their related functions." alt="" coords="635,155,802,181"/>
+<area shape="rect" id="node8" href="$flag__handler_8hpp.html" title="Handles user print flags and triggers the appropriate print functions." alt="" coords="873,237,1055,263"/>
+<area shape="rect" id="node4" href="$count__vectorization_8hpp.html" title="Provides functions to vectorize a Corpus object." alt="" coords="5,237,235,263"/>
+<area shape="rect" id="node6" href="$file__operations-prev_8hpp.html" title=" " alt="" coords="259,229,429,271"/>
+<area shape="rect" id="node7" href="$file__operations_8hpp.html" title="Provides file handling utilities for loading, reading, and saving data." alt="" coords="454,237,653,263"/>
+<area shape="rect" id="node9" href="$preprocess_8hpp.html" title="Handles text preprocessing tasks such as stemming and text normalization." alt="" coords="677,237,849,263"/>
+<area shape="rect" id="node5" href="$TFIDF_8hpp.html" title="Defines the TFIDF_ class, which implements methods for processing trained and untrained data and calc..." alt="" coords="485,319,622,345"/>
+</map>
