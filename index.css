@@ -166,7 +166,7 @@ h2 {
 }
 
 .bar::after {
-  content: attr(data-width) '%';
+  content: attr(data-text);
   /* Display the percentage from the data-width attribute */
   position: absolute;
   top: -25px;
