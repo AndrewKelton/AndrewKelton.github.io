@@ -227,10 +227,9 @@
                 conducted research on parallel TF-IDF text classifier implementations in C++, if you want to
                 learn more about my research please view the project in the <a href="#projects"
                     style="color: #ebe3e3;">projects</a>
-                section below. Furthermore, I am taking my experience and knowledge I gained from this
-                research project to intern at <a href="https://www.urbansky.com/" style="color: #ebe3e3;">Urban Sky</a>
-                in Denver,
-                Colorado this summer as an AI Systems Intern.
+                section below. Furthermore, I have gained experience interning this past summer at <a
+                    href="https://www.urbansky.com/" style="color: #ebe3e3;">Urban Sky</a>
+                on-site in Denver, Colorado as an AI Systems Intern.
                 <br>
                 <br>
                 I hope you enjoy my site :)
@@ -245,7 +244,7 @@
 
         <div style="height: 25px;"></div>
 
-        <div id="skills">
+        <div id="skills" >
             <h2 style="font-weight:bold; text-align:center;">Skills</h2>
             <div class="charts-container">
                 <div class="chart-container">
@@ -379,21 +378,41 @@
 
         <div style="height: 25px;"></div>
 
-        <div id="experience">
+        <div id="experience" >
             <h2 style="font-weight:bold; text-align:center;">Experience</h2>
-            <div id="urban-sky" style="padding:100px">
-                <h3>AI Systems Intern</h3>
-                <a>
-                    <p style="padding-left:25px">
-                        Urban Sky
-                    </p>
-                </a>
+            <div id="urban-sky" style="padding-top: 0px; padding-left:100px;">
+                <h3>
+                    Urban Sky | <span style="font-size: 0.9em"><i>Denver, CO</i></span>
+                </h3>
+                <div style="padding-left:15px;">
+                    <h4 onclick="toggleDetails('details-urban-sky', this)" style="font-size:1.05em; cursor:pointer;">
+                        <span class="toggle-icon">▶</span>AI Systems Intern | <span style="font-size: 0.9em"><i>May 2025
+                                − August 2025</i></span>
+                    </h4>
+                    <div id="details-urban-sky" style="padding-left:50px; display:none;">
+                        <p>During my internship, I designed and implemented a conversational multi-agent system...</p>
+                        <div>
+                            <h5 style="font-size:1.05em">Key Contributions:</h5>
+                            <ul>
+                                <li>Enabled non-technical users to quickly generate queries...</li>
+                                <li>Automated analysis and creation of CSV/graph reports...</li>
+                            </ul>
+                            <h5 style="font-size:1.05em">Tools & Technologies</h5>
+                            <ul>
+                                <li><b>Language:</b> Python</li>
+                                <li><b>Libraries:</b> CrewAI, Slack SDK, AWS SDK</li>
+                                <li><b>APIs:</b> OpenRouter, Slack</li>
+                                <li><b>Deployment & Infrastructure:</b> AWS Lambda, Docker, Terraform</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div style="height: 25px;"></div>
 
-        <div id="projects">
+        <div id="projects" >
             <h2 style="font-weight:bold; text-align:center;">Projects</h2>
             <div class="container" id="drop-projects">
                 <div class="dropdown">
@@ -504,79 +523,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Filesystem Simulator Project -->
-                <!-- <div class="dropdown">
-                    <button class="dropbtn" onclick="toggleDropdown('project2')">
-                        <img src="assets/img/file_sim.png" alt="file_sim_logo" class="App-logo">
-                    </button>
-                    <div class="dropdown-content" id="project2">
-                        <a href="https://github.com/AndrewKelton/filesystem-simulator"><b
-                                style="font-size: 1.25em; color:rgb(114, 150, 24); text-decoration: underline;">Filesystem
-                                Simulator</b> <span style="font-size: 0.8em;"><br>April 2024 - May 2024</span></a>
-                        <p><b>Description:</b> Command line filesystem simulator in C. Requires user to login and parses
-                            user commands executing functions the user has inputted. Allows users to
-                            create/write/delete/save files inside the terminal.</p>
-                        <a>
-                            <div style="display:inline-flex; " class="description">
-                                <div>
-                                    <b>Languages</b>
-                                    <ul>
-                                        <li>C</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <b>Features</b>
-                                    <ul>
-                                        <li>Advanced DSA</li>
-                                        <li>Custom commands</li>
-                                        <li>Parsing user commands</li>
-                                        <li>File creating/writing/deletion/saving</li>
-                                        <li>Directory navigation</li>
-                                        <li>Root and user accounts</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div> -->
-
-                <!-- My Website Project -->
-                <!-- <div class="dropdown">
-                    <button class="dropbtn" onclick="toggleDropdown('project3')">
-                        <img src="assets/img/my_website_go.png" alt="file_sim_logo" class="App-logo">
-                    </button>
-                    <div class="dropdown-content" id="project3">
-                        <a href="https://github.com/AndrewKelton/myWebsite"><b
-                                style="font-size: 1.25em; color:rgb(63, 172, 176); text-decoration: underline;">myWebsite</b>
-                            <span style="font-size: 0.8em;"><br>February 2024 - March 2024</span></a>
-                        <p><b>Description:</b> Dynamic website with a login page, requiring users to login or register
-                            before accessing site. Uses a CAPTCHA after login, then allows users to navigate pages of
-                            the site.</p>
-                        <a>
-                            <div style="display:inline-flex; " class="description">
-                                <div>
-                                    <b>Languages</b>
-                                    <ul>
-                                        <li>GoLang</li>
-                                        <li>Python</li>
-                                        <li>JavaScript</li>
-                                        <li>SQL</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <b>Features</b>
-                                    <ul>
-                                        <li>Login system</li>
-                                        <li>CAPTCHA</li>
-                                        <li>Dynamic website</li>
-                                        <li>Hashed passwords</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>  -->
             </div>
             <p class="note" style="font-weight: lighter; text-align:center; padding-bottom: 0px;">Click on project name
                 to view Github link.</p>
@@ -584,7 +530,7 @@
 
         <div style="height: 25px;"></div>
 
-        <div align="center" id="courses" style="margin-right: 10px; margin-left: 10px">
+        <div align="center" id="courses" style="margin-right: 10px; margin-left: 10px" >
             <h2 style="font-weight:bold; margin:20px;">Courses</h2>
             <table>
                 <thead>
@@ -694,20 +640,20 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Processes for Object-Oriented Software Development</td>
-                                <td>COP 4331</td>
-                            </tr>
-                            <tr>
-                                <td>Robot Vision</td>
-                                <td>CAP 4453</td>
+                                <td>Algorithms for Machine Learning</td>
+                                <td>CAP 4611</td>
                             </tr>
                             <tr>
                                 <td>Computer Architecture</td>
                                 <td>EEL 4768</td>
                             </tr>
                             <tr>
-                                <td>Calculus III</td>
-                                <td>MAC 2313</td>
+                                <td>Matrix and Linear Algebra</td>
+                                <td>MAS 3105</td>
+                            </tr>
+                            <tr>
+                                <td>Biology 2</td>
+                                <td>BSC 2011</td>
                             </tr>
                         </tbody>
                     </table>
@@ -718,7 +664,7 @@
 
     <div style="height: 150px;"></div>
 
-    <div style="height: 150px;" id="contact">
+    <div style="height: 150px;" id="contact" >
         <h2 align="center" style="padding-top:10px; color:rgb(71, 126, 236)">Contact</h2>
         <div class="row" align="center" style="padding-top: 10px;">
             <div class="block">
@@ -738,60 +684,7 @@
         </div>
     </div>
 
-    <!-- JavaScript for some user interactions -->
-    <script>
-
-        // Function to toggle dropdown visibility
-        function toggleDropdown(dropdownId) {
-            var dropdown = document.getElementById(dropdownId);
-            dropdown.classList.toggle("show");
-            console.log('Dropdown toggled: ', dropdown);
-
-            if (dropdown.classList.contains("show")) {
-                var dropdownRect = dropdown.getBoundingClientRect();
-                var dropdownBot = dropdownRect.bottom;  // Dropdown's distance from the bottom of the viewport
-                var dropdownTop = dropdownRect.top; // Dropdown's distance from the top of the viewport
-                var windowHeight = window.innerHeight;  // Viewport height
-                var scrollThreshold = 50;
-
-                // Scroll dynamically based on the dropdown's bottom position
-                setTimeout(function () {
-                    if (dropdownBot > windowHeight - scrollThreshold) {
-                        // Scroll down if the dropdown is too low on the screen
-                        window.scrollBy({
-                            top: dropdownBot - (windowHeight - scrollThreshold) + 20,
-                            behavior: 'smooth'
-                        });
-                        console.log('scrolled down');
-                    } else if (dropdownTop < scrollThreshold * 2.2) {
-                        // Scroll up if the dropdown is too high on the screen
-                        window.scrollBy({
-                            top: -(dropdownTop + scrollThreshold),
-                            behavior: 'smooth'
-                        });
-                        console.log('scrolled up');
-                    }
-                }, 300);
-            }
-        }
-
-        // Scrolling function of menu bar
-        let lastScrollTop = 0;
-        const nav = document.querySelector('nav');
-
-        window.addEventListener('scroll', function () {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollTop > lastScrollTop) {
-                // Scrolling down
-                nav.classList.add('hidden');
-            } else {
-                // Scrolling up
-                nav.classList.remove('hidden');
-            }
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 
