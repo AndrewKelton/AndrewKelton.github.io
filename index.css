@@ -299,4 +299,64 @@ nav a:hover {
 
 #contact {
   background-color: rgb(84, 71, 53);
+  padding: 80px 20px;
+  min-height: 300px;
+}
+
+/* Triangle Toggle Button */
+.toggle-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-right: 8px;
+}
+
+.toggle-icon.rotate {
+  transform: rotate(90deg);
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+  color: #ebe3e3;
+}
+
+.contact-section h2 {
+  color: #477eec;
+  margin-bottom: 20px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-list li a {
+  font-size: 1.2em;
+  color: #ebe3e3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-list li a:hover {
+  color: #477eec;
+}
+
+
+/* Section Animation */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
