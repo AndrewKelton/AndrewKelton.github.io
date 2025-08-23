@@ -239,6 +239,7 @@ h2 {
 }
 
 .dropdown-content p {
+  position: relative;
   margin-right: 25px;
   margin-top:0px;
   margin-bottom: 0px;
@@ -359,9 +360,17 @@ nav a:hover {
   opacity: 1;
   transform: translateY(0);
   transition-delay: var(--delay, 0s); /* Use custom property for flexibility */
+} 
+
+.details-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
 }
 
-
+.details-content.expanded {
+  max-height: 500px; /* Adjust based on content */
+}
 
 /* Button Effects */
 /* .button {
