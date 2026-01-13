@@ -372,6 +372,42 @@ nav a:hover {
   max-height: 500px; /* Adjust based on content */
 }
 
+/* h1 {
+  transition: all 0.3s ease;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  transform: scale(1);
+} */
+
+h1:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+  /* font-size: 2.3rem;
+  letter-spacing: 1px;
+  transform: scale(1.05);
+  text-shadow: 0 0 8px rgba(0, 119, 255, 0.5);
+  border-bottom: 2px solid #0077ff; */
+  /* color: #0077ff; Optional: adds a color shift */
+}
+
+/* h2 {
+  transition: all 0.3s ease;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  transform: scale(1); 
+} */
+
+h2:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+  /* font-size: 2.3rem;
+  letter-spacing: 1px;
+  transform: scale(1.05);
+  text-shadow: 0 0 8px rgba(0, 119, 255, 0.5);
+  border-bottom: 2px solid #0077ff; */
+  /* color: #0077ff; Optional: adds a color shift */
+}
+
 /* Button Effects */
 /* .button {
   position: relative;
