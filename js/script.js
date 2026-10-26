@@ -1,138 +1,76 @@
 // script.js
 
-function toggleDetails(id, headerElement) {
-  const details = document.getElementById(id);
-  const icon = headerElement.querySelector('.toggle-icon');
-  const isVisible = details.style.display === "block";
-
-  details.style.display = isVisible ? "none" : "block";
-  icon.classList.toggle("rotate", !isVisible);
-
-  if (!isVisible) {
-    setTimeout(() => {
-      const rect = details.getBoundingClientRect();
-      const scrollThreshold = 50;
-      const windowHeight = window.innerHeight;
-
-      if (rect.bottom > windowHeight - scrollThreshold) {
-        window.scrollBy({
-          top: rect.bottom - (windowHeight - scrollThreshold) + 20,
-          behavior: 'smooth'
-        });
-      } else if (rect.top < scrollThreshold * 2.2) {
-        window.scrollBy({
-          top: -(rect.top + scrollThreshold),
-          behavior: 'smooth'
-        });
-      }
-    }, 300);
-  }
-}
-
-function toggleDropdown(dropdownId) {
-  const allDropdowns = document.querySelectorAll('.dropdown-content');
-
-  // Close all other dropdowns
-  allDropdowns.forEach(dropdown => {
-    if (dropdown.id !== dropdownId) {
-      dropdown.classList.remove("show");
-    }
-  });
-
-  // Toggle the clicked dropdown
-  const dropdown = document.getElementById(dropdownId);
-  dropdown.classList.toggle("show");
-
-  // Scroll logic only if it's now shown
-  if (dropdown.classList.contains("show")) {
-    setTimeout(() => {
-      const dropdownRect = dropdown.getBoundingClientRect();
-      const dropdownBot = dropdownRect.bottom;
-      const dropdownTop = dropdownRect.top;
-      const windowHeight = window.innerHeight;
-      const scrollThreshold = 50;
-
-      if (dropdownBot > windowHeight - scrollThreshold) {
-        window.scrollBy({
-          top: dropdownBot - (windowHeight - scrollThreshold) + 20,
-          behavior: 'smooth'
-        });
-      } else if (dropdownTop < scrollThreshold * 2.2) {
-        window.scrollBy({
-          top: -(dropdownTop + scrollThreshold),
-          behavior: 'smooth'
-        });
-      }
-    }, 300);
-  }
-}
-
 document.addEventListener("DOMContentLoaded", () => {
-  const faders = document.querySelectorAll(".fade-in-section");
-
-  const appearOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px 0px 0px"
-  };
-
+  // ── Fade-in on scroll ────────────────────────────────────────────────
   const appearOnScroll = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
       entry.target.classList.add("visible");
       observer.unobserve(entry.target);
     });
-  }, appearOptions);
+  });
+  document.querySelectorAll(".fade-in-section").forEach(s => appearOnScroll.observe(s));
 
-  faders.forEach(section => {
-    appearOnScroll.observe(section);
+  // ── Project folder browser ───────────────────────────────────────────
+  const folders = Array.from(document.querySelectorAll(".folder"));
+  const counter = document.getElementById("pager-count");
+  let current = 0;
+
+  function openFolder(index, focus = false) {
+    current = (index + folders.length) % folders.length;
+    folders.forEach((tab, i) => {
+      const active = i === current;
+      tab.classList.toggle("active", active);
+      tab.setAttribute("aria-selected", active);
+      tab.tabIndex = active ? 0 : -1;
+      document.getElementById(tab.getAttribute("aria-controls")).hidden = !active;
+    });
+    counter.textContent = `Project ${current + 1} / ${folders.length}`;
+    if (focus) folders[current].focus();
+  }
+
+  folders.forEach((tab, i) => tab.addEventListener("click", () => openFolder(i)));
+  document.getElementById("prev-project").addEventListener("click", () => openFolder(current - 1));
+  document.getElementById("next-project").addEventListener("click", () => openFolder(current + 1));
+
+  document.querySelector(".folders").addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") { e.preventDefault(); openFolder(current + 1, true); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); openFolder(current - 1, true); }
   });
 
-  // ── Courses table sort ──────────────────────────────────────────────
-  const sortBtns = document.querySelectorAll('.sort-btn');
-  const coursesTable = document.getElementById('courses-table');
+  // ── Courses table sort ───────────────────────────────────────────────
+  const sortBtns = document.querySelectorAll(".sort-btn");
+  const tbody = document.querySelector("#courses-table tbody");
 
   sortBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener("click", () => {
       const col = parseInt(btn.dataset.col);
-      const isActive = btn.classList.contains('active');
-      // Flip direction if already active, otherwise default to asc
-      const newDir = (isActive && btn.dataset.dir === 'asc') ? 'desc' : 'asc';
+      const newDir = (btn.classList.contains("active") && btn.dataset.dir === "asc") ? "desc" : "asc";
 
-      // Reset all buttons
       sortBtns.forEach(b => {
-        b.classList.remove('active');
-        b.dataset.dir = 'asc';
-        b.querySelector('.sort-arrow').textContent = '↑';
+        b.classList.remove("active");
+        b.dataset.dir = "asc";
+        b.querySelector(".sort-arrow").textContent = "↑";
       });
-
-      // Mark this button active
-      btn.classList.add('active');
+      btn.classList.add("active");
       btn.dataset.dir = newDir;
-      btn.querySelector('.sort-arrow').textContent = newDir === 'asc' ? '↑' : '↓';
+      btn.querySelector(".sort-arrow").textContent = newDir === "asc" ? "↑" : "↓";
 
-      // Sort the tbody rows
-      const tbody = coursesTable.querySelector('tbody');
-      const rows = Array.from(tbody.querySelectorAll('tr'));
+      const rows = Array.from(tbody.querySelectorAll("tr"));
       rows.sort((a, b) => {
         const aText = a.cells[col].textContent.trim().toLowerCase();
         const bText = b.cells[col].textContent.trim().toLowerCase();
-        return newDir === 'asc'
-          ? aText.localeCompare(bText)
-          : bText.localeCompare(aText);
+        return newDir === "asc" ? aText.localeCompare(bText) : bText.localeCompare(aText);
       });
       rows.forEach(row => tbody.appendChild(row));
     });
   });
 
-  // Hide nav on scroll down, show on scroll up
+  // ── Hide header on scroll down, show on scroll up ────────────────────
+  const header = document.querySelector(".site-header");
   let lastScrollY = window.scrollY;
-  const nav = document.querySelector('nav');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > lastScrollY && window.scrollY > 80) {
-      nav.classList.add('hidden');
-    } else {
-      nav.classList.remove('hidden');
-    }
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("hidden", window.scrollY > lastScrollY && window.scrollY > 80);
     lastScrollY = window.scrollY;
   });
 });
